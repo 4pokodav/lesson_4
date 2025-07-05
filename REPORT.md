@@ -3,9 +3,11 @@
 ### 1.1 Сравнение на MNIST (20 баллов)
 Обучил три модели: Полносвязная сеть (3-4 слоя); Простая CNN (2-3 conv слоя); CNN с Residual Block;
 Сравнил их между собой.
-                            **Полносвязная сеть и CNN с Residual Block**
+
+**Полносвязная сеть и CNN с Residual Block**
 ![Сравнение 1](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_residual_mnist_comparison.png)
-                            **Полносвязная сеть и Простая CNN**
+
+**Полносвязная сеть и Простая CNN**
 ![Сравнение 2](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_snn_mnist_comparison.png)
 
 Наилучшей моделью на MNIST оказалась CNN с Residual Block (с точностью 0.9943)
