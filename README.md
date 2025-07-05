@@ -11,13 +11,31 @@
 - Простая CNN (2-3 conv слоя) | Train Acc: 0.9916; Test Acc: 0.9924
 - CNN с Residual Block | Train Acc: 0.9932; Test Acc: 0.9943
 
+**Полносвязная сеть и CNN с Residual Block**
+![Сравнение 1](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_residual_mnist_comparison.png)
+
+**Полносвязная сеть и Простая CNN**
+![Сравнение 2](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_snn_mnist_comparison.png)
+
+Наилучшей моделью на MNIST оказалась CNN с Residual Block (с точностью 0.9943)
+
 ### 1.2 Сравнение на CIFAR-10 (20 баллов)
 Сравнил производительность на CIFAR-10:
 - Полносвязная сеть (глубокая) | Train Acc: 0.5414; Test Acc: 0.5159
 - CNN с Residual блоками | Train Acc: 0.8253; Test Acc: 0.8000
 - CNN с регуляризацией и Residual блоками | Train Acc: 0.8099; Test Acc: 0.7626
 
-Графики прилагаются.
+**Полносвязная сеть и CNN с Residual блоками**
+![Сравнение 1](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_residual_cifar_comparison.png)
+
+**Полносвязная сеть и CNN с регуляризацией и Residual блоками**
+![Сравнение 2](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_snn_cifar_comparison.png)
+
+Наилучшей моделью на CIFAR оказалась CNN с Residual блоками (с точностью 0.8)
+
+![Confusion matrix](https://github.com/4pokodav/lesson_4/raw/main/plots/confusion_mat_cifar_cnn.png)
+
+![Gradient flow](https://github.com/4pokodav/lesson_4/raw/main/plots/gradient_flow.png)
 
 ## Задание 2: Анализ архитектур CNN (30 баллов)
 
@@ -28,6 +46,10 @@
 - 7x7 ядра | Train Acc: 0.9928; Test Acc: 0.9915; Training time: 106.78
 - Комбинация разных размеров (1x1 + 3x3) | Train Acc: 0.9912; Test Acc: 0.9909; Training time: 101.83
 
+![Kernel size](https://github.com/4pokodav/lesson_4/raw/main/plots/kernel_size_accuracy.png)
+
+Наилучший результат показала модели с ядрами 3x3 и 7x7 (acc = 0.9915)
+
 ### 2.2 Влияние глубины CNN (15 баллов)
 Исследуйте влияние глубины CNN:
 - Неглубокая CNN (2 conv слоя) | Train Acc: 0.9883; Test Acc: 0.9893; Training time: 106.51
@@ -35,7 +57,9 @@
 - Глубокая CNN (6+ conv слоев) | Train Acc: 0.9901; Test Acc: 0.9917; Training time: 121.55
 - CNN с Residual связями | Train Acc: 0.9926; Test Acc: 0.9934; Training time: 125.65
 
-Графики прилагаются.
+![Depth](https://github.com/4pokodav/lesson_4/raw/main/plots/depth_accuracy.png)
+
+Наилучший результат показала модель CNN с Residual связями (acc = 0.9934)
 
 ## Задание 3: Кастомные слои и эксперименты (30 баллов)
 
@@ -55,5 +79,3 @@
 Проведены эксперименты с тремя типами Residual-блоков:
 
 ![Метрики](https://github.com/4pokodav/lesson_4/raw/main/plots/3.2.png)
-
-Графики прилагаются.
