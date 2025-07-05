@@ -15,7 +15,11 @@
 ### 1.2 Сравнение на CIFAR-10 (20 баллов)
 Обучил три модели: Полносвязная сеть; CNN с Residual блоками; CNN с регуляризацией и Residual блоками;
 Сравнил их между собой.
+
+**Полносвязная сеть и CNN с Residual блоками**
 ![Сравнение 1](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_residual_cifar_comparison.png)
+
+**Полносвязная сеть и CNN с регуляризацией и Residual блоками**
 ![Сравнение 2](https://github.com/4pokodav/lesson_4/raw/main/plots/fc_snn_cifar_comparison.png)
 
 Наилучшей моделью на CIFAR оказалась x (с точностью x)
