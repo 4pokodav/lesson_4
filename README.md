@@ -13,9 +13,9 @@
 
 ### 1.2 Сравнение на CIFAR-10 (20 баллов)
 Сравнил производительность на CIFAR-10:
-- Полносвязная сеть (глубокая) | Train Acc: 0.9852; Test Acc: 0.9766
-- CNN с Residual блоками | Train Acc: 0.9852; Test Acc: 0.9766
-- CNN с регуляризацией и Residual блоками | Train Acc: 0.9852; Test Acc: 0.9766
+- Полносвязная сеть (глубокая) | Train Acc: 0.5414; Test Acc: 0.5159
+- CNN с Residual блоками | Train Acc: 0.8253; Test Acc: 0.8000
+- CNN с регуляризацией и Residual блоками | Train Acc: 0.8099; Test Acc: 0.7626
 
 Графики прилагаются.
 
