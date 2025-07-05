@@ -4,6 +4,7 @@
 Сравнить эффективность сверточных и полносвязных сетей на задачах компьютерного зрения, изучить преимущества CNN архитектур.
 
 ## Задание 1: Сравнение CNN и полносвязных сетей (40 баллов)
+Обучил три модели с одинаковыми гиперпараметрами для сравнения на MNIST. Затем обучил ещё три модели для сравнения на CIFAR.
 
 ### 1.1 Сравнение на MNIST (20 баллов)
 Сравнил производительность на MNIST:
@@ -39,6 +40,7 @@
 
 ## Задание 2: Анализ архитектур CNN (30 баллов)
 
+
 ### 2.1 Влияние размера ядра свертки (15 баллов)
 Исследовал влияние размера ядра свертки:
 - 3x3 ядра | Train Acc: 0.9922; Test Acc: 0.9915; Training time: 92.3
@@ -50,6 +52,18 @@
 
 Наилучший результат показала модели с ядрами 3x3 и 7x7 (acc = 0.9915)
 
+Активация первого слоя модели с ядром 3x3:
+![Activation](https://github.com/4pokodav/lesson_4/raw/main/plots/kernel_3_activations.png)
+
+Активация первого слоя модели с ядром 5x5:
+![Activation](https://github.com/4pokodav/lesson_4/raw/main/plots/kernel_5_activations.png)
+
+Активация первого слоя модели с ядром 7x7:
+![Activation](https://github.com/4pokodav/lesson_4/raw/main/plots/kernel_7_activations.png)
+
+Активация первого слоя модели с комбинацией:
+![Activation](https://github.com/4pokodav/lesson_4/raw/main/plots/combo_activations.png)
+
 ### 2.2 Влияние глубины CNN (15 баллов)
 Исследуйте влияние глубины CNN:
 - Неглубокая CNN (2 conv слоя) | Train Acc: 0.9883; Test Acc: 0.9893; Training time: 106.51
@@ -60,6 +74,18 @@
 ![Depth](https://github.com/4pokodav/lesson_4/raw/main/plots/depth_accuracy.png)
 
 Наилучший результат показала модель CNN с Residual связями (acc = 0.9934)
+
+Карта признаков модели с глубиной 2:
+![Features](https://github.com/4pokodav/lesson_4/raw/main/plots/depth_2_features.png)
+
+Карта признаков модели с глубиной 4:
+![Features](https://github.com/4pokodav/lesson_4/raw/main/plots/depth_4_features.png)
+
+Карта признаков модели с глубиной 6:
+![Features](https://github.com/4pokodav/lesson_4/raw/main/plots/depth_6_features.png)
+
+Карта признаков модели с residual связями:
+![Features](https://github.com/4pokodav/lesson_4/raw/main/plots/residual_features.png)
 
 ## Задание 3: Кастомные слои и эксперименты (30 баллов)
 
