@@ -54,6 +54,6 @@
 ### 3.2 Эксперименты с Residual блоками (15 баллов)
 Проведены эксперименты с тремя типами Residual-блоков:
 
-![Метрики](https://github.com/4popkodav/lesson_4/raw/main/plots/3.2.png)
+![Метрики](https://github.com/4pokodav/lesson_4/raw/main/plots/3.2.png)
 
 Графики прилагаются.
