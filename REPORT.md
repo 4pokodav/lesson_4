@@ -16,6 +16,7 @@
 
 Наилучшей моделью на CIFAR оказалась x (с точностью x)
 
+
 ![Confusion matrix](https://github.com/4pokodav/lesson_4/raw/main/plots/confusion_mat_cifar_cnn.png)
 
 ![Gradient flow](https://github.com/4pokodav/lesson_4/raw/main/plots/gradient_flow.png)
